@@ -1,3 +1,4 @@
+/* Reset asas */
 * {
   margin: 0;
   padding: 0;
@@ -5,71 +6,86 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4;
   color: #333;
+  background-color: #f9f9f9;
+  padding: 20px;
 }
 
-header {
-  background: #333;
+/* Navbar dan header */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004080;
+  padding: 10px 20px;
   color: white;
-  padding: 1rem;
-  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-header .logo {
-  font-size: 2rem;
+.logo {
+  display: flex;
+  align-items: center;
   font-weight: bold;
+  font-size: 1.5rem;
 }
 
-nav ul {
+.logo img {
+  height: 50px;
+  margin-right: 15px;
+}
+
+/* Navigasi */
+.nav-links {
   list-style: none;
-  margin-top: 10px;
+  display: flex;
 }
 
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
-section {
-  padding: 2rem;
-  margin: 2rem;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-section h2 {
-  color: #0072ff;
-}
-
-ul {
-  list-style: disc;
+.nav-links li {
   margin-left: 20px;
 }
 
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ffcc00;
+}
+
+/* Section styling */
+section {
+  margin: 30px 0;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+h1, h2 {
+  margin-bottom: 15px;
+  color: #004080;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 15px 10px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #777;
+  border-top: 1px solid #ddd;
+}
+
+/* Link */
 a {
-  color: #0072ff;
+  color: #004080;
 }
 
 a:hover {
-  text-decoration: underline;
-}
-
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
+  color: #ffcc00;
 }
