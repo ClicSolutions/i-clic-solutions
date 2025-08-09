@@ -1,0 +1,12 @@
+[build]
+  publish = "docs"
+  # functions = "netlify/functions"  # Uncomment jika guna serverless functions
+
+[context.production.environment]
+  NODE_ENV = "production"
+
+[context.deploy-preview.environment]
+  NODE_ENV = "development"
+
+[context.branch-deploy.environment]
+  NODE_ENV = "development"
